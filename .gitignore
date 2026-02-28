@@ -1,0 +1,19 @@
+# Virtual environment
+.venv/
+
+#Python cache
+__pycache__/
+.ipynb_checkpoints/
+
+# Data
+data/raw/
+data/processed/
+
+#Models
+models/ 
+
+# OS files
+.DS_Store
+Thumbs.db
+
+
