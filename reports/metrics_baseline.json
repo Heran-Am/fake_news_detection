@@ -1,0 +1,25 @@
+{
+  "val": {
+    "f1": 0.9872463768115942
+  },
+  "test": {
+    "f1": 0.9878472222222222
+  },
+  "label_mapping": {
+    "0": "true",
+    "1": "fake"
+  },
+  "tfidf": {
+    "max_features": 80000,
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 2,
+    "sublinear_tf": true
+  },
+  "model": {
+    "type": "LogisticRegression",
+    "class_weight": "balanced"
+  }
+}
