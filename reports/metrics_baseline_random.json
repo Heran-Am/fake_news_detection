@@ -1,0 +1,31 @@
+{
+  "run_name": "baseline_random",
+  "data_dir": "data\\processed",
+  "label_mapping": {
+    "0": "true",
+    "1": "fake"
+  },
+  "val": {
+    "f1_fake": 0.9827682045580878,
+    "f1_macro": 0.9837486342987483,
+    "pr_auc": 0.9978685456845567
+  },
+  "test": {
+    "f1_fake": 0.9837067209775967,
+    "f1_macro": 0.9852198613179857,
+    "pr_auc": 0.9982284605091892
+  },
+  "tfidf": {
+    "max_features": 80000,
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 2,
+    "sublinear_tf": true
+  },
+  "model": {
+    "type": "LogisticRegression",
+    "class_weight": "balanced"
+  }
+}

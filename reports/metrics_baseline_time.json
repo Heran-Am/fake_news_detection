@@ -1,0 +1,31 @@
+{
+  "run_name": "baseline_time",
+  "data_dir": "data\\processed_time",
+  "label_mapping": {
+    "0": "true",
+    "1": "fake"
+  },
+  "val": {
+    "f1_fake": 0.9919137466307277,
+    "f1_macro": 0.9931228652181978,
+    "pr_auc": 0.9989644661941288
+  },
+  "test": {
+    "f1_fake": 0.9462809917355371,
+    "f1_macro": 0.9720678886070425,
+    "pr_auc": 0.9957209011869239
+  },
+  "tfidf": {
+    "max_features": 80000,
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 2,
+    "sublinear_tf": true
+  },
+  "model": {
+    "type": "LogisticRegression",
+    "class_weight": "balanced"
+  }
+}

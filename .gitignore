@@ -1,19 +1,16 @@
-# Virtual environment
 .venv/
-
-#Python cache
+venv/
 __pycache__/
-.ipynb_checkpoints/
+*.pyc
 
-# Data
 data/raw/
 data/processed/
+data/processed_time/
+reports/metrics_baseline.json
+models/
+*.joblib
 
-#Models
-models/ 
-
-# OS files
-.DS_Store
-Thumbs.db
+# HuggingFace caches (optional)
+.cache/
 
 

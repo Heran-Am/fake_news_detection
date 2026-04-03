@@ -1,0 +1,42 @@
+{
+  "run_name": "baseline_time",
+  "data_dir": "data\\processed_time",
+  "optimized_for": "precision_fake",
+  "best_threshold": 0.9400000000000001,
+  "val": {
+    "threshold": 0.9400000000000001,
+    "f1_fake": 0.8140703517587939,
+    "f1_macro": 0.8575579086778409,
+    "precision_fake": 1.0,
+    "recall_fake": 0.6864406779661016,
+    "pr_auc": 0.9989644661941288,
+    "confusion_matrix": [
+      [
+        1853,
+        0
+      ],
+      [
+        407,
+        891
+      ]
+    ]
+  },
+  "test": {
+    "threshold": 0.9400000000000001,
+    "f1_fake": 0.7979274611398963,
+    "f1_macro": 0.8957717187840585,
+    "precision_fake": 1.0,
+    "recall_fake": 0.6637931034482759,
+    "pr_auc": 0.9957209011869239,
+    "confusion_matrix": [
+      [
+        6070,
+        0
+      ],
+      [
+        78,
+        154
+      ]
+    ]
+  }
+}

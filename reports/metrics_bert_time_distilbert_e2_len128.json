@@ -1,0 +1,19 @@
+{
+  "model_name": "distilbert-base-uncased",
+  "data_dir": "data\\processed_time",
+  "out_dir": "models\\bert_time_distilbert_e2",
+  "max_length": 128,
+  "epochs": 2,
+  "batch_size": 4,
+  "lr": 2e-05,
+  "val": {
+    "f1_fake": 0.9984603541185527,
+    "f1_macro": 0.9986902202558207,
+    "pr_auc": 0.9999905023549004
+  },
+  "test": {
+    "f1_fake": 0.9893390191897654,
+    "f1_macro": 0.9944634939376927,
+    "pr_auc": 0.9995681609548888
+  }
+}
