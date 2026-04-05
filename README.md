@@ -12,7 +12,7 @@ This repo goes beyond “just training a model” by focusing on **evaluation in
 
 ---
 
-## ✅ What you’ll learn / what this project demonstrates
+## what this project demonstrates
 
 - Clean and reproducible ML project structure (scripts, metrics artifacts, inference)
 - Text preprocessing + leakage mitigation in real datasets
@@ -37,12 +37,12 @@ Kaggle “Fake and True News” dataset:
 
 ---
 
-## 🔍 Leakage & Data Quality Fixes (what we found and fixed)
+## 🔍 Leakage & Data Quality Fixes 
 
 ### 1) Reuters leakage (major shortcut)
 We measured how often the token **“Reuters”** appears by class and found it was almost perfectly aligned with TRUE news.
 
-✅ Fix:
+Fix:
 - removed Reuters wire-prefix/token during preprocessing.
 
 Script:
@@ -51,7 +51,7 @@ Script:
 ### 2) Duplicate / near-duplicate overlap across splits
 Even after dropping exact duplicates, we detected near-identical texts appearing in both train and test.
 
-✅ Fix:
+Fix:
 - created a strong normalized hash key (`dedupe_key`)
 - ensured **zero overlap** after cleaning/splitting
 
@@ -92,11 +92,11 @@ Because the time-split test set can be **highly imbalanced** (few fake examples)
 | Time | TF-IDF + Logistic Regression | 0.9463 | 0.9721 | 0.9957 |
 | Time | DistilBERT (2 epochs, max_len=128) | **0.9893** | **0.9945** | **0.9996** |
 
-✅ **Key takeaway:** On the harder time split, DistilBERT improved **F1(fake)** from **0.9463 → 0.9893**.
+**Key takeaway:** On the harder time split, DistilBERT improved **F1(fake)** from **0.9463 → 0.9893**.
 
 ---
 
-## 🧪 Threshold tuning (important lesson)
+##  Threshold tuning (important lesson)
 We also tested threshold tuning on validation (`tune_threshold.py`).
 
 - Best threshold on **VAL** did **not** improve performance on the **future TEST** window.
